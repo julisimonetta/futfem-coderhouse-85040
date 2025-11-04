@@ -1,0 +1,217 @@
+/* #region styles for all pages */
+*{
+    margin: 0% !important;
+    padding: 0% !important;
+    box-sizing: border-box !important;
+}
+body{
+    width: 100vw !important;
+    height: fit-content !important;
+    padding: 0% !important;
+    margin: 0% !important;
+}
+h1{
+    color: red !important;
+    font-family: "Roboto Slab", serif !important;
+}
+/* #region navbar */
+.navbar{
+    background-color: black !important;
+    height: 10vh;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky !important;
+    top: 0% !important;
+}
+.navbar img{
+    height: 100%;
+    width: 10% !important;
+    object-fit: contain;
+}
+.navbar ul{
+    display: flex;
+    justify-content: right;
+    gap: 20px !important;
+}
+.navbar li a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 300 !important;
+}
+.socialMedia{
+    width: 6% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+.socialMedia a{
+    height: 2rem !important;
+    width: 2rem !important;
+}
+.socialMedia a img{
+    height: 100% !important;
+    width: 100% !important;
+}
+/* #endregion */
+/* #region body */
+    main{
+        width: 100% !important;
+        height: 80vh !important;
+        height: fit-content !important;
+        background-image: url('../assets/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mainContainer{
+        height: 80vh !important;
+    }
+    /* #region grid home */
+    .mainContainerGrid{
+        display: grid !important;
+        grid-template-columns: 1fr 2fr !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+        grid-gap: 15px !important;
+        padding: 5% 2% !important;
+    }
+    .leftMenu{
+        grid-column: 1/2 !important;
+        grid-row: 1/2 !important;
+    }
+    .leftMenu img{
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+    }
+    .leftMenu1{
+        background-color: white !important;
+        color: black !important;
+        grid-row: 2/3 !important;
+        grid-column: 1/2 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    .content1{
+        background-color: black !important;
+        color: white !important;
+        grid-row: 1/3 !important;
+        grid-column: 2 !important;
+        padding: 2% !important;
+    }
+    .content1 h1{
+        font-size: 3rem !important;
+        color: red !important; 
+        text-align: center !important;
+        margin: 2% 0% !important;
+    }
+    .content1 p{
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    .content2{
+        background-color: red !important;
+        color: white !important;
+        grid-column: 1/3 !important;
+        grid-row: 3 !important;
+        text-align: center !important ;
+    }
+    /* #endregion */
+    /* #region form contacto */
+    .formContainer{
+        width: 100% !important   ;
+        height: fit-content !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 5% 0% 0 0 !important;
+    }
+    .formContainer form{
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        height: 50vh !important;
+        width: 50% !important  ;
+        padding: 2% !important;
+        border-radius: 8px !important;
+    }
+    .formContainer form label{
+        color: white !important;
+        font-size: 1.2rem !important;
+        margin-bottom: 0.5rem !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
+    .btnForm{
+        background-color: blue !important;
+        color: white !important;
+    }
+    .btnForm:hover{
+        background-color: red !important;
+        color: white !important;
+        cursor: pointer !important;
+    }
+    .btnForm:active{
+        transform: scale(0.98) !important;
+    }
+    /* #endregion */
+
+/* #endregion */
+/* #region footer */
+footer{
+    display: flex;
+    background-color: white !important;
+    justify-content: space-around !important;
+    align-items: center;
+    height: 10vh !important;
+    width: 100% !important;
+    position: sticky !important;
+    bottom: 0% !important;
+}
+footer .carousel,
+footer .carousel .carousel-inner,
+footer .carousel .carousel-inner .carousel-item{
+    width: 100% !important;
+    height: 100% !important;
+}
+ .partnerSliderImg{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 2% !important;
+ }
+.partnerSliderImg img{
+    height: 8vh !important;
+    width: 20% !important;
+    object-fit: contain !important;
+}
+/* #endregion */
+/* #region Personalización de texto para pruebas */
+.greenText{
+    color: greenyellow;
+}
+.underlineText{
+    text-decoration: underline;
+}
+.boldText{
+    font-weight: bold;
+}
+.redSection{
+    background-color: red;
+}
+.redSection p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.fonditoBlancoParaQueSeVea{
+    background-color: white;
+}
+/* #endregion */
