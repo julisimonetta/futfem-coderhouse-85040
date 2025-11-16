@@ -1,0 +1,236 @@
+* {
+  font-family: Roboto Slab;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100% !important;
+  height: 10vh !important;
+  background-color: black;
+  position: sticky !important;
+  top: 0% !important;
+}
+.navbar img {
+  width: 10% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px !important;
+}
+.navbar ul li {
+  list-style: none !important;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: Roboto Slab;
+  font-weight: 300 !important;
+}
+.navbar .socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 6% !important;
+  height: 100% !important;
+}
+.navbar .socialMedia a {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+.navbar .socialMedia a img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100% !important;
+  height: 10vh !important;
+  background-color: white !important;
+  position: sticky !important;
+  bottom: 0% !important;
+}
+footer .carousel {
+  width: 100% !important;
+  height: 100% !important;
+}
+footer .carousel .carousel-inner {
+  width: 100% !important;
+  height: 100% !important;
+}
+footer .carousel .carousel-inner .carousel-item {
+  width: 100% !important;
+  height: 100% !important;
+}
+footer .carousel .carousel-inner .carousel-item .partnerSliderImg {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0.5% !important;
+}
+footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
+  width: 24.5% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.mainContainerGrid {
+  display: grid !important;
+  grid-template-columns: 1fr 2fr !important;
+  grid-template-rows: 1fr 1fr 1fr !important;
+  gap: 15px !important;
+  padding: 5% 2% !important;
+}
+.mainContainerGrid .leftMenu {
+  grid-column: 1/2 !important;
+  grid-row: 1/2 !important;
+}
+.mainContainerGrid .leftMenu img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+.mainContainerGrid .leftMenu1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: white !important;
+  color: black !important;
+  grid-row: 2/3 !important;
+  grid-column: 1/2 !important;
+}
+.mainContainerGrid .content1 {
+  background-color: black !important;
+  color: white !important;
+  grid-row: 1/3 !important;
+  grid-column: 2 !important;
+  padding: 2% !important;
+}
+.mainContainerGrid .content1 h1 {
+  font-size: 3rem !important;
+  color: red !important;
+  text-align: center !important;
+  margin: 2% 0% !important;
+}
+.mainContainerGrid .content1 p {
+  font-size: 1.2rem !important;
+  text-align: center !important;
+}
+.mainContainerGrid .content2 {
+  background-color: red !important;
+  color: white !important;
+  grid-column: 1/3 !important;
+  grid-row: 3 !important;
+  text-align: center !important;
+}
+
+.mainContainer .formContainer {
+  width: 100% !important;
+  height: fit-content !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 5% 0 0 0 !important;
+}
+.mainContainer .formContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 50% !important;
+  height: 50vh !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 2% !important;
+}
+.mainContainer .formContainer form label {
+  color: white;
+  font-size: 1.2rem !important;
+  margin-bottom: 0.5rem !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+.mainContainer .formContainer form input, .mainContainer .formContainer form textarea {
+  width: 100% !important;
+  height: 50px !important;
+  margin-bottom: 1rem !important;
+  border-radius: 4px;
+  border: none !important;
+  padding: 0.5rem !important;
+}
+.mainContainer .formContainer form .btnForm {
+  width: 100% !important;
+  height: 55px !important;
+  background-color: blue !important;
+  color: white !important;
+}
+.mainContainer .formContainer form :hover {
+  background-color: red !important;
+  color: white !important;
+  cursor: pointer !important;
+}
+.mainContainer .formContainer form :active {
+  transform: scale(0.98) !important;
+}
+
+body {
+  width: 100vw !important;
+  height: fit-content !important;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+body .mainContainer {
+  width: 100% !important;
+  height: 80vh !important;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  overflow-y: scroll !important;
+}
+body .mainContainer .greenText {
+  color: greenyellow;
+}
+body .mainContainer .underlineText {
+  text-decoration: underline;
+}
+body .mainContainer .boldText {
+  font-weight: bold;
+}
+body .mainContainer .redSection {
+  background-color: red;
+}
+body .mainContainer .redSection p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+body .mainContainer .fonditoBlancoParaQueSeVea {
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

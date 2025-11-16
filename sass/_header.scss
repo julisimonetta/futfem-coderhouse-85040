@@ -1,0 +1,46 @@
+@use 'variables' as v;
+
+.navbar{
+    @include v.flex(row, space-around, center, nowrap);
+    @include v.size(100%, 10vh);
+    background-color: v.$background;
+    position: sticky !important;
+    top: 0% !important;
+
+    img{
+        @include v.size(10%, 100%);
+        object-fit: contain;
+    }
+
+    ul{
+        @include v.flex(row, right, center, nowrap);
+        gap: 20px !important;
+
+        li{
+            list-style: none !important;
+            
+            a{
+                color: white;
+                font-size: 1rem;
+                text-decoration: none;
+                font-family: v.$font;
+                font-weight: 300 !important;
+            }
+        }
+    }
+
+    .socialMedia{
+        @include v.flex(row, space-around, center, nowrap);
+        @include v.size(6%, 100%);
+
+        a{
+            @include v.size(2rem, 2rem);
+
+            img{
+                @include v.fullSize;
+                object-fit: contain !important;
+            }
+        }
+    }
+}
+

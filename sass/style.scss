@@ -1,0 +1,45 @@
+// Archivo principal de estilos SASS
+@use 'variables';
+@use 'header';
+@use 'footer';
+@use 'home';
+@use 'contact';
+@use 'images';
+@use 'information';
+@use 'products';
+
+body{
+    width: 100vw !important;
+    height: fit-content !important;
+    padding: 0% !important;
+    margin: 0% !important;
+
+    .mainContainer{
+        @include variables.size(100%, 80vh);
+        background-image: url('../assets/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        overflow-y: scroll !important;
+
+        .greenText{
+            color: greenyellow;
+        }
+        .underlineText{
+            text-decoration: underline;
+        }
+        .boldText{
+            font-weight: bold;
+        }
+        .redSection{
+            background-color: red;
+        }
+        .redSection p{
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+        .fonditoBlancoParaQueSeVea{
+            background-color: white;
+        }
+    }
+}

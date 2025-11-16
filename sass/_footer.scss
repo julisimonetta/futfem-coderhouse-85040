@@ -1,0 +1,32 @@
+@use 'variables' as v;
+
+footer{
+    @include v.flex(row, space-around, center, nowrap);
+    @include v.size(100%, 10vh);
+    background-color: white !important;
+    position: sticky !important;
+    bottom: 0% !important;
+
+    .carousel{
+        @include v.fullSize;
+
+        .carousel-inner{
+            @include v.fullSize;
+            
+
+            .carousel-item{
+                @include v.fullSize;
+
+                .partnerSliderImg{
+                    @include v.fullSize;
+                    padding: 0.5% !important;
+
+                    img{
+                        @include v.size(24.5%, 100%);
+                        object-fit: contain !important;
+                    }
+                }
+            }
+        }
+    }
+}
