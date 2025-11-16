@@ -43,4 +43,11 @@
             }
         }
     }
+    @include v.mobile{
+        .formContainer{
+            form{
+                @include v.size(90%, fit-content);
+            }
+        }
+    }
 }

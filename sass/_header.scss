@@ -15,6 +15,9 @@
     ul{
         @include v.flex(row, right, center, nowrap);
         gap: 20px !important;
+        width: fit-content !important;
+        padding: 0% !important;
+        margin: 0% !important;
 
         li{
             list-style: none !important;
@@ -39,6 +42,23 @@
             img{
                 @include v.fullSize;
                 object-fit: contain !important;
+            }
+        }
+    }
+    @include v.mobile{
+        .socialMedia{
+            display: none !important;
+        }
+        ul{
+            @include v.flex(row, start, center, nowrap);
+            width: fit-content !important;
+            padding: 0% !important;
+            margin: 0% !important;
+
+            li{
+                a{
+                    font-size: 0.8rem !important;
+                }
             }
         }
     }
