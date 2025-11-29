@@ -8,7 +8,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   flex-wrap: nowrap;
   width: 100% !important;
@@ -17,67 +17,93 @@
   position: sticky !important;
   top: 0% !important;
 }
-.navbar img {
+.navbar .menuAndIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 85% !important;
+  height: 100% !important;
+}
+.navbar .menuAndIconContainer .menuBtn {
+  margin: 0% 2% !important;
+  height: 100% !important;
+  border: 0px !important;
+  padding: 0% !important;
+}
+.navbar .menuAndIconContainer .menuBtn span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: fit-content !important;
+  height: 100% !important;
+  color: white !important;
+  font-size: 2rem !important;
+}
+.navbar .menuAndIconContainer img {
   width: 10% !important;
   height: 100% !important;
   object-fit: contain;
 }
-.navbar ul {
+.navbar .menuAndIconContainer .offcanvas {
+  background-color: black !important;
+}
+.navbar .menuAndIconContainer .offcanvas .offcanvas-header {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100% !important;
+  height: fit-content !important;
+  padding: 2% 1% !important;
+}
+.navbar .menuAndIconContainer .offcanvas .offcanvas-header .btn-close {
+  color: white !important;
+  font-weight: bold !important;
+  padding: 0% !important;
+  margin: 0% !important;
+  font-size: 1.5rem !important;
+}
+.navbar .menuAndIconContainer .offcanvas .offcanvas-body ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   flex-wrap: nowrap;
   gap: 20px !important;
-  width: fit-content !important;
+  width: 100% !important;
+  height: fit-content !important;
   padding: 0% !important;
   margin: 0% !important;
 }
-.navbar ul li {
+.navbar .menuAndIconContainer .offcanvas .offcanvas-body ul li {
   list-style: none !important;
+  width: 100% !important;
+  height: fit-content !important;
+  text-align: left !important;
 }
-.navbar ul li a {
+.navbar .menuAndIconContainer .offcanvas .offcanvas-body ul li a {
   color: white;
   font-size: 1rem;
   text-decoration: none;
   font-family: Roboto Slab;
   font-weight: 300 !important;
+  width: 100% !important;
+  height: 100% !important;
+  text-align: right !important;
 }
 .navbar .socialMedia {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 6% !important;
+  width: 15% !important;
   height: 100% !important;
-}
-.navbar .socialMedia a {
-  width: 2rem !important;
-  height: 2rem !important;
-}
-.navbar .socialMedia a img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-}
-@media (min-width: 320px) and (max-width: 630px) {
-  .navbar .socialMedia {
-    display: none !important;
-  }
-  .navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: fit-content !important;
-    padding: 0% !important;
-    margin: 0% !important;
-  }
-  .navbar ul li a {
-    font-size: 0.8rem !important;
-  }
 }
 
 footer {

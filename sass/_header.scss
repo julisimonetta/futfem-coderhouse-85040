@@ -1,66 +1,89 @@
 @use 'variables' as v;
 
 .navbar{
-    @include v.flex(row, space-around, center, nowrap);
+    @include v.flex(row, start, center, nowrap);
     @include v.size(100%, 10vh);
     background-color: v.$background;
     position: sticky !important;
     top: 0% !important;
 
-    img{
-        @include v.size(10%, 100%);
-        object-fit: contain;
-    }
+    .menuAndIconContainer{
+        @include v.flex(row, start, center, nowrap);
+        width: 85% !important;
+        height: 100% !important;
 
-    ul{
-        @include v.flex(row, right, center, nowrap);
-        gap: 20px !important;
-        width: fit-content !important;
-        padding: 0% !important;
-        margin: 0% !important;
-
-        li{
-            list-style: none !important;
-            
-            a{
-                color: white;
-                font-size: 1rem;
-                text-decoration: none;
-                font-family: v.$font;
-                font-weight: 300 !important;
-            }
-        }
-    }
-
-    .socialMedia{
-        @include v.flex(row, space-around, center, nowrap);
-        @include v.size(6%, 100%);
-
-        a{
-            @include v.size(2rem, 2rem);
-
-            img{
-                @include v.fullSize;
-                object-fit: contain !important;
-            }
-        }
-    }
-    @include v.mobile{
-        .socialMedia{
-            display: none !important;
-        }
-        ul{
-            @include v.flex(row, start, center, nowrap);
-            width: fit-content !important;
+        .menuBtn{
+            margin: 0% 2% !important;
+            height: 100% !important;
+            border: 0px !important;
             padding: 0% !important;
-            margin: 0% !important;
 
-            li{
-                a{
-                    font-size: 0.8rem !important;
+            span{
+                @include v.flex(column, center, center, nowrap);
+                width: fit-content !important;
+                height: 100% !important;
+                color: white !important;
+                font-size: 2rem !important;
+            }
+        }
+
+        img{
+            @include v.size(10%, 100%);
+            object-fit: contain;
+        }
+
+        .offcanvas{
+            background-color: black !important;
+
+            .offcanvas-header{
+                @include v.flex(row, end, center, nowrap);
+                width: 100% !important;
+                height: fit-content !important;
+                padding: 2% 1% !important;
+
+                .btn-close{
+                    color: white !important;
+                    font-weight: bold !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+                    font-size: 1.5rem !important;
+                }
+            }
+
+            .offcanvas-body{
+                ul{
+                    @include v.flex(column, start, center, nowrap);
+                    gap: 20px !important;
+                    width: 100% !important;
+                    height: fit-content !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+
+                    li{
+                        list-style: none !important;
+                        width: 100% !important;
+                        height: fit-content !important;
+                        text-align: left   !important;
+                        
+                        a{
+                            color: white;
+                            font-size: 1rem;
+                            text-decoration: none;
+                            font-family: v.$font;
+                            font-weight: 300 !important;
+                            width: 100% !important;
+                            height: 100% !important;
+                            text-align: right   !important;
+                        }
+                    }
                 }
             }
         }
+    }  
+    .socialMedia{
+        @include v.flex(row, center, center, nowrap);
+        width: 15% !important;
+        height: 100% !important;
     }
-}
 
+}
