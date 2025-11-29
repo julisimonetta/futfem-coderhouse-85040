@@ -281,6 +281,108 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   }
 }
 
+.mainContainer {
+  width: 100% !important;
+  height: 80vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.mainContainer .infoContainer {
+  width: 95% !important;
+  height: 90% !important;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 8px !important;
+  padding: 1%;
+}
+.mainContainer .infoContainer .carousel {
+  width: 60% !important;
+  height: 100% !important;
+}
+.mainContainer .infoContainer .carousel .carousel-indicators button {
+  background-color: white !important;
+}
+.mainContainer .infoContainer .carousel .carousel-inner {
+  width: 100% !important;
+  height: 100% !important;
+}
+.mainContainer .infoContainer .carousel .carousel-inner .carousel-item {
+  width: 100% !important;
+  height: 100% !important;
+}
+.mainContainer .infoContainer .carousel .carousel-inner .carousel-item img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 8px !important;
+}
+.mainContainer .infoContainer .carousel .carousel-inner .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.mainContainer .infoContainer .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  color: white !important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+.mainContainer .infoContainer .carousel .carousel-inner .carousel-item .carousel-caption p {
+  color: white !important;
+  font-size: 1rem !important;
+}
+.mainContainer .infoContainer .infoText {
+  width: 35% !important;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.mainContainer .infoContainer .infoText h1 {
+  width: 100% !important;
+  height: fit-content !important;
+  color: white !important;
+  font-size: 2rem !important;
+  margin-bottom: 20px !important;
+  text-align: center !important;
+}
+.mainContainer .infoContainer .infoText h2 {
+  width: 100% !important;
+  height: fit-content !important;
+  color: white !important;
+  font-size: 1rem !important;
+  text-align: justify !important;
+}
+@media (min-width: 320px) and (max-width: 630px) {
+  .mainContainer .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .mainContainer .infoContainer .carousel {
+    width: 100% !important;
+    height: 50% !important;
+    margin-bottom: 20px !important;
+  }
+  .mainContainer .infoContainer .infoText {
+    width: 100% !important;
+    height: fit-content !important;
+  }
+  .mainContainer .infoContainer .infoText h1 {
+    font-size: 1.5rem !important;
+  }
+  .mainContainer .infoContainer .infoText h2 {
+    font-size: 0.9rem !important;
+  }
+}
+
 body {
   width: 100vw !important;
   height: fit-content !important;
@@ -293,7 +395,6 @@ body .mainContainer {
   background-image: url("../assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover !important;
-  overflow-y: scroll !important;
 }
 body .mainContainer .greenText {
   color: greenyellow;

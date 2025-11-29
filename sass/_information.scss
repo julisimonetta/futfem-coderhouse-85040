@@ -1,0 +1,95 @@
+@use 'variables' as v;
+
+.mainContainer{
+    @include v.size(100%, 80vh);
+    @include v.flex(column, center, center, nowrap);
+
+    .infoContainer{
+        @include v.size(95%, 90%);
+        @include v.flex(row-reverse, space-around, start, nowrap);
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 8px !important;
+        padding: 1%;
+
+        .carousel{
+            @include v.size(60%, 100%);
+
+            .carousel-indicators{
+                button{
+                    background-color: white !important;
+                }
+            }
+
+            .carousel-inner{
+                @include v.size(100%, 100%);
+
+                .carousel-item{
+                    @include v.size(100%, 100%);
+
+                    img{
+                        @include v.size(100%, 100%);
+                        border-radius: 8px !important;
+                    }
+
+                    .carousel-caption{
+                        background-color: rgba(0, 0, 0, 0.5) !important;
+
+                        h5{
+                            color: white !important;
+                            font-size: 1.5rem !important;
+                            font-weight: bold !important;  
+                        }
+
+                        p{
+                            color: white !important;
+                            font-size: 1rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .infoText{
+            @include v.size(35%, 100%);
+            @include v.flex(column, center, flex-start, nowrap);
+
+            h1{
+                @include v.size(100%, fit-content);
+                color: white !important;
+                font-size: 2rem !important;
+                margin-bottom: 20px !important;
+                text-align: center !important;
+            }
+
+            h2{
+                @include v.size(100%, fit-content);
+                color: white !important;
+                font-size: 1rem !important;
+                text-align: justify !important;
+            }
+        }
+    }
+
+    @include v.mobile{
+        .infoContainer{
+            @include v.flex(column, center, center, nowrap);
+
+            .carousel{
+                @include v.size(100%, 50%);
+                margin-bottom: 20px !important;
+            }
+
+            .infoText{
+                @include v.size(100%, fit-content);
+
+                h1{
+                    font-size: 1.5rem !important;
+                }
+
+                h2{
+                    font-size: 0.9rem !important;
+                }
+            }
+        }
+    }
+}
