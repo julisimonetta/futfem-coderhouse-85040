@@ -34,6 +34,7 @@
 
         .offcanvas{
             background-color: black !important;
+            width: 25vw;
 
             .offcanvas-header{
                 @include v.flex(row, end, center, nowrap);
@@ -84,6 +85,12 @@
         @include v.flex(row, center, center, nowrap);
         width: 15% !important;
         height: 100% !important;
+    }
+    @include v.mobile{
+        .offcanvas{
+            width: 100vw !important;
+            z-index: 1050 !important;
+        }
     }
 
 }

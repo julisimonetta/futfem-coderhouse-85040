@@ -50,6 +50,7 @@
 }
 .navbar .menuAndIconContainer .offcanvas {
   background-color: black !important;
+  width: 25vw;
 }
 .navbar .menuAndIconContainer .offcanvas .offcanvas-header {
   display: flex;
@@ -104,6 +105,12 @@
   flex-wrap: nowrap;
   width: 15% !important;
   height: 100% !important;
+}
+@media (min-width: 320px) and (max-width: 630px) {
+  .navbar .offcanvas {
+    width: 100vw !important;
+    z-index: 1050 !important;
+  }
 }
 
 footer {
