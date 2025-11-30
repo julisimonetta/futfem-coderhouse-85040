@@ -531,6 +531,7 @@ body {
 }
 body .mainContainer {
   width: 100% !important;
+  min-height: 80vh !important;
   background-image: url("../assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover !important;
