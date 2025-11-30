@@ -96,6 +96,16 @@
             width: 100vw !important;
             z-index: 1050 !important;
         }
+        .menuAndIconContainer{
+            @include v.size(75%, 100%);
+
+            img{
+                @include v.size(fit-content, 100%);
+            }
+        }
+        .socialMedia{
+            @include v.size(20%, 100%);
+        }
     }
 
 }
