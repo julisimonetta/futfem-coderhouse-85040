@@ -1,57 +1,26 @@
 @use 'variables' as v;
 
 .mainContainer{
-    @include v.size(100%, 80vh);
+    @include v.size(100%, fit-content);
     @include v.flex(column, center, center, nowrap);
 
     .infoContainer{
         @include v.size(95%, 90%);
-        @include v.flex(row-reverse, space-around, start, nowrap);
+        @include v.flex(row, space-around, start, nowrap);
         background-color: rgba(0, 0, 0, 0.5) !important;
         border-radius: 8px !important;
         padding: 1%;
 
-        .carousel{
+        .infoImg{
             @include v.size(60%, 100%);
-
-            .carousel-indicators{
-                button{
-                    background-color: white !important;
-                }
-            }
-
-            .carousel-inner{
-                @include v.size(100%, 100%);
-
-                .carousel-item{
-                    @include v.size(100%, 100%);
-
-                    img{
-                        @include v.size(100%, 100%);
-                        border-radius: 8px !important;
-                    }
-
-                    .carousel-caption{
-                        background-color: rgba(0, 0, 0, 0.5) !important;
-
-                        h5{
-                            color: white !important;
-                            font-size: 1.5rem !important;
-                            font-weight: bold !important;  
-                        }
-
-                        p{
-                            color: white !important;
-                            font-size: 1rem !important;
-                        }
-                    }
-                }
-            }
+            border-radius: 8px !important;
+            object-fit: fill !important
         }
     
         .infoText{
             @include v.size(35%, 100%);
-            @include v.flex(column, center, flex-start, nowrap);
+            @include v.flex(column, start, flex-start, nowrap);
+            padding: 0px !important;
 
             h1{
                 @include v.size(100%, fit-content);
@@ -73,8 +42,9 @@
     @include v.mobile{
         .infoContainer{
             @include v.flex(column, center, center, nowrap);
+            @include v.size(98%, fit-content);
 
-            .carousel{
+            .infoImg{
                 @include v.size(100%, 50%);
                 margin-bottom: 20px !important;
             }

@@ -290,7 +290,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
 
 .mainContainer {
   width: 100% !important;
-  height: 80vh !important;
+  height: fit-content !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,7 +301,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   width: 95% !important;
   height: 90% !important;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-around;
   align-items: start;
   flex-wrap: nowrap;
@@ -309,46 +309,21 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   border-radius: 8px !important;
   padding: 1%;
 }
-.mainContainer .infoContainer .carousel {
+.mainContainer .infoContainer .infoImg {
   width: 60% !important;
   height: 100% !important;
-}
-.mainContainer .infoContainer .carousel .carousel-indicators button {
-  background-color: white !important;
-}
-.mainContainer .infoContainer .carousel .carousel-inner {
-  width: 100% !important;
-  height: 100% !important;
-}
-.mainContainer .infoContainer .carousel .carousel-inner .carousel-item {
-  width: 100% !important;
-  height: 100% !important;
-}
-.mainContainer .infoContainer .carousel .carousel-inner .carousel-item img {
-  width: 100% !important;
-  height: 100% !important;
   border-radius: 8px !important;
-}
-.mainContainer .infoContainer .carousel .carousel-inner .carousel-item .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-}
-.mainContainer .infoContainer .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-  color: white !important;
-  font-size: 1.5rem !important;
-  font-weight: bold !important;
-}
-.mainContainer .infoContainer .carousel .carousel-inner .carousel-item .carousel-caption p {
-  color: white !important;
-  font-size: 1rem !important;
+  object-fit: fill !important;
 }
 .mainContainer .infoContainer .infoText {
   width: 35% !important;
   height: 100% !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: flex-start;
   flex-wrap: nowrap;
+  padding: 0px !important;
 }
 .mainContainer .infoContainer .infoText h1 {
   width: 100% !important;
@@ -372,8 +347,10 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    width: 98% !important;
+    height: fit-content !important;
   }
-  .mainContainer .infoContainer .carousel {
+  .mainContainer .infoContainer .infoImg {
     width: 100% !important;
     height: 50% !important;
     margin-bottom: 20px !important;
