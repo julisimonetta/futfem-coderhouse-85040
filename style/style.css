@@ -97,6 +97,10 @@
   height: 100% !important;
   text-align: right !important;
 }
+.navbar .menuAndIconContainer .offcanvas .offcanvas-body ul li .linkActive {
+  text-decoration: underline !important;
+  width: 100% !important;
+}
 .navbar .socialMedia {
   display: flex;
   flex-direction: row;
