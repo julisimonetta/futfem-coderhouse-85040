@@ -15,11 +15,18 @@ body{
     margin: 0% !important;
 
     .mainContainer{
-        @include variables.size(100%, 80vh);
+        width: 100% !important;
         background-image: url('../assets/background.jpg');
         background-repeat: no-repeat;
         background-size: cover !important;
-        // overflow-y: scroll !important;
+        padding: 5% 0% !important;
+        overflow-y: scroll !important;
+
+          &::-webkit-scrollbar {
+            width: 10px !important;
+            height: 10px;
+            background-color: transparent !important;
+        }
 
         .greenText{
             color: greenyellow;
