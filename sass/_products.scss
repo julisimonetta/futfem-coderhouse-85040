@@ -5,7 +5,7 @@
     @include v.flex(column, center, center, nowrap);
 
     .prodInfo{
-        @include v.size(95%, 50%);
+        @include v.size(60%, 50%);
         @include v.flex(row, space-around, start, nowrap);
         background-color: rgba(0, 0, 0, 0.5) !important;
         border-radius: 8px !important;
@@ -54,7 +54,7 @@
     }
 
     .prodContainer{
-        @include v.size(95%, fit-content);
+        @include v.size(60%, fit-content);
         @include v.flex(row, space-between, center, wrap);
         margin-top: 2% !important;
 

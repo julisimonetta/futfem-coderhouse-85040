@@ -11,7 +11,7 @@
   justify-content: start;
   align-items: center;
   flex-wrap: nowrap;
-  width: 100% !important;
+  width: 100vw !important;
   height: 10vh !important;
   background-color: black;
   position: sticky !important;
@@ -224,6 +224,11 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   text-align: center !important;
   text-wrap: wrap !important;
 }
+.mainContainerGrid .content1::-webkit-scrollbar {
+  width: 0px !important;
+  height: 10px !important;
+  background-color: transparent !important;
+}
 @media (min-width: 320px) and (max-width: 630px) {
   .mainContainerGrid {
     display: grid !important;
@@ -396,7 +401,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   flex-wrap: nowrap;
 }
 .mainContainer .prodInfo {
-  width: 95% !important;
+  width: 60% !important;
   height: 50% !important;
   display: flex;
   flex-direction: row;
@@ -458,7 +463,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   }
 }
 .mainContainer .prodContainer {
-  width: 95% !important;
+  width: 60% !important;
   height: fit-content !important;
   display: flex;
   flex-direction: row;
@@ -544,12 +549,13 @@ body .mainContainer {
   background-image: url("../assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover !important;
-  padding: 5% 0% !important;
+  padding: 2% 1% !important;
+  margin: 0% !important;
   overflow-y: scroll !important;
 }
 body .mainContainer::-webkit-scrollbar {
-  width: 10px !important;
-  height: 10px;
+  width: 0px !important;
+  height: 10px !important;
   background-color: transparent !important;
 }
 body .mainContainer .greenText {

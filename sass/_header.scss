@@ -2,7 +2,7 @@
 
 .navbar{
     @include v.flex(row, start, center, nowrap);
-    @include v.size(100%, 10vh);
+    @include v.size(100vw, 10vh);
     background-color: v.$background;
     position: sticky !important;
     top: 0% !important;
