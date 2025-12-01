@@ -251,6 +251,18 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   }
 }
 
+.mainContainer .textSection {
+  width: 80% !important;
+  height: fit-content !important;
+  margin: 0% !important;
+  text-align: center !important;
+}
+.mainContainer .textSection p {
+  font-size: 1.2rem !important;
+  color: white !important;
+  text-align: center !important;
+  text-wrap: wrap !important;
+}
 .mainContainer .formContainer {
   width: 100% !important;
   height: fit-content !important;

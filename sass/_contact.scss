@@ -2,6 +2,18 @@
 
 .mainContainer{
 
+    .textSection{
+        @include v.size(80%, fit-content);
+        margin: 0% !important;
+        text-align: center !important;
+        p{
+            font-size: 1.2rem !important;
+            color: white !important;
+            text-align: center !important;
+            text-wrap: wrap !important;
+        }
+    }
+
     .formContainer{
         @include v.size(100%, fit-content);
         @include v.flex(row, center, center, nowrap);
