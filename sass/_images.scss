@@ -1,9 +1,48 @@
 @use 'variables' as v;
 
 .imagesMainContainer{
-    @include v.flex(row, center, center, wrap);
+    @include v.flex(column, start, center, wrap);
+    @include v.size(100%, auto);
 
-    .hola1{
-        background-color: red !important;
+    .imageTilte{
+        width: 100% !important;
+        height: fit-content !important;
+        border-bottom: 1px solid white;
+        padding: 0% 1% !important;
+
+        H1{
+            color: white !important;
+            font-size: 1rem !important;
+            width: 100% !important;
+            text-align: left !important;
+            text-wrap: wrap !important;
+        }
+    }
+
+    .imageContainer{
+        @include v.flex(row, space-between, center, wrap);
+        @include v.size(100%, fit-content);
+        margin: 1% 0% 0% 0% !important;
+        padding: 0% 1% !important;
+
+        img{
+            @include v.size(30%, 20vh);
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: 0% 0% 1% 0% !important;
+            padding: 0% !important;
+            object-fit: cover;
+        }
+
+    }
+
+    @include v.mobile{
+        .imageContainer{
+            @include v.flex(row, space-around, center, wrap);
+            
+            img{
+                @include v.size(45%, 30vh);
+            }
+        }
     }
 }

@@ -323,13 +323,58 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
 
 .imagesMainContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
+  width: 100% !important;
+  height: auto !important;
 }
-.imagesMainContainer .hola1 {
-  background-color: red !important;
+.imagesMainContainer .imageTilte {
+  width: 100% !important;
+  height: fit-content !important;
+  border-bottom: 1px solid white;
+  padding: 0% 1% !important;
+}
+.imagesMainContainer .imageTilte H1 {
+  color: white !important;
+  font-size: 1rem !important;
+  width: 100% !important;
+  text-align: left !important;
+  text-wrap: wrap !important;
+}
+.imagesMainContainer .imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100% !important;
+  height: fit-content !important;
+  margin: 1% 0% 0% 0% !important;
+  padding: 0% 1% !important;
+}
+.imagesMainContainer .imageContainer img {
+  width: 30% !important;
+  height: 20vh !important;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0% 0% 1% 0% !important;
+  padding: 0% !important;
+  object-fit: cover;
+}
+@media (min-width: 320px) and (max-width: 630px) {
+  .imagesMainContainer .imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .imagesMainContainer .imageContainer img {
+    width: 45% !important;
+    height: 30vh !important;
+  }
 }
 
 .mainContainer {
