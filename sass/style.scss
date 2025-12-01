@@ -9,41 +9,34 @@
 @use 'products';
 
 
-    .mainContainer{
-        width: 100vw !important;
-        height: fit-content !important;
-        min-height: 80vh !important;
-        background-image: url('../assets/background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover !important;
-        padding: 0% !important;
-        margin: 0% !important;
-        // overflow-y: scroll !important;
+.mainContainer{
+     width: 100vw !important;
+    height: fit-content !important;
+    min-height: 80vh !important;
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    padding: 0% !important;
+    margin: 0% !important;
 
-        //   &::-webkit-scrollbar {
-        //     width: 1px !important;
-        //     height: 10px !important;
-        //     background-color: transparent !important;
-        // }
-
-        .greenText{
-            color: greenyellow;
-        }
-        .underlineText{
-            text-decoration: underline;
-        }
-        .boldText{
-            font-weight: bold;
-        }
-        .redSection{
-            background-color: red;
-        }
-        .redSection p{
-            color: white;
-            font-size: 30px;
-            text-align: center;
-        }
-        .fonditoBlancoParaQueSeVea{
-            background-color: white;
-        }
+    .greenText{
+        color: greenyellow;
     }
+    .underlineText{
+        text-decoration: underline;
+    }
+    .boldText{
+        font-weight: bold;
+    }
+    .redSection{
+        background-color: red;
+    }
+    .redSection p{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+    .fonditoBlancoParaQueSeVea{
+        background-color: white;
+    }
+}
