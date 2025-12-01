@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+.imagesMainContainer{
+    @include v.flex(row, center, center, wrap);
+
+    .hola1{
+        background-color: red !important;
+    }
+}

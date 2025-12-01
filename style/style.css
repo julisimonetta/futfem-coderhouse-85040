@@ -135,7 +135,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  width: 100% !important;
+  width: 100vw !important;
   height: 10vh !important;
   background-color: white !important;
   position: sticky !important;
@@ -164,25 +164,28 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   object-fit: contain !important;
 }
 
-.mainContainerGrid {
+.gridContainer {
+  width: 100% !important;
+  height: fit-content !important;
+  padding: 0% 1% !important;
+  margin: 0% !important;
   display: grid !important;
   grid-template-columns: 1fr 2fr !important;
   grid-template-rows: 1fr 1fr !important;
   gap: 15px !important;
-  padding: 5% 2% !important;
 }
-.mainContainerGrid .leftMenu {
+.gridContainer .leftMenu {
   width: 100% !important;
   height: 100% !important;
   grid-column: 1/2 !important;
   grid-row: 1/2 !important;
 }
-.mainContainerGrid .leftMenu img {
+.gridContainer .leftMenu img {
   width: 100% !important;
   height: 100% !important;
   object-fit: fill !important;
 }
-.mainContainerGrid .leftMenu1 {
+.gridContainer .leftMenu1 {
   width: 100% !important;
   height: 100% !important;
   display: flex;
@@ -196,14 +199,14 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   grid-column: 1/2 !important;
   padding: 1% !important;
 }
-.mainContainerGrid .leftMenu1 h2 {
+.gridContainer .leftMenu1 h2 {
   width: fit-content !important;
   height: fit-content !important;
   font-size: 2rem !important;
   text-align: center !important;
   margin: 0% !important;
 }
-.mainContainerGrid .content1 {
+.gridContainer .content1 {
   width: 100% !important;
   height: 100% !important;
   background-color: black !important;
@@ -211,44 +214,38 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   grid-row: 1/3 !important;
   grid-column: 2 !important;
   padding: 2% !important;
-  overflow-y: scroll !important;
 }
-.mainContainerGrid .content1 h1 {
+.gridContainer .content1 h1 {
   font-size: 3rem !important;
   color: red !important;
   text-align: center !important;
   margin: 2% 0% !important;
 }
-.mainContainerGrid .content1 p {
+.gridContainer .content1 p {
   font-size: 1.2rem !important;
   text-align: center !important;
   text-wrap: wrap !important;
 }
-.mainContainerGrid .content1::-webkit-scrollbar {
-  width: 0px !important;
-  height: 10px !important;
-  background-color: transparent !important;
-}
 @media (min-width: 320px) and (max-width: 630px) {
-  .mainContainerGrid {
+  .gridContainer {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 2fr !important;
     padding: 2% !important;
   }
-  .mainContainerGrid .leftMenu {
+  .gridContainer .leftMenu {
     grid-column: 1/2 !important;
     grid-row: 1/2 !important;
   }
-  .mainContainerGrid .leftMenu1 {
+  .gridContainer .leftMenu1 {
     grid-column: 2/3 !important;
     grid-row: 1/2 !important;
   }
-  .mainContainerGrid .content1 {
+  .gridContainer .content1 {
     grid-column: 1/3 !important;
     grid-row: 2/3 !important;
   }
-  .mainContainerGrid .content1 p {
+  .gridContainer .content1 p {
     font-size: 0.9rem !important;
     margin: 0% !important;
   }
@@ -310,6 +307,17 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
     width: 90% !important;
     height: fit-content !important;
   }
+}
+
+.imagesMainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imagesMainContainer .hola1 {
+  background-color: red !important;
 }
 
 .mainContainer {
@@ -401,7 +409,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   flex-wrap: nowrap;
 }
 .mainContainer .prodInfo {
-  width: 60% !important;
+  width: 100% !important;
   height: 50% !important;
   display: flex;
   flex-direction: row;
@@ -410,7 +418,8 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   flex-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.5) !important;
   border-radius: 8px !important;
-  padding: 1% !important;
+  padding: 0% !important;
+  margin: 0% !important;
 }
 .mainContainer .prodInfo img {
   width: 55% !important;
@@ -463,7 +472,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   }
 }
 .mainContainer .prodContainer {
-  width: 60% !important;
+  width: 95% !important;
   height: fit-content !important;
   display: flex;
   flex-direction: row;
@@ -527,7 +536,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
     font-size: 0.7rem !important;
   }
   .mainContainer .prodContainer .prodContent {
-    width: 100% !important;
+    width: 95% !important;
     height: 40vh !important;
     display: flex;
     flex-direction: column;
@@ -537,45 +546,34 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   }
 }
 
-body {
+.mainContainer {
   width: 100vw !important;
   height: fit-content !important;
-  padding: 0% !important;
-  margin: 0% !important;
-}
-body .mainContainer {
-  width: 100% !important;
   min-height: 80vh !important;
   background-image: url("../assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover !important;
-  padding: 2% 1% !important;
+  padding: 0% !important;
   margin: 0% !important;
-  overflow-y: scroll !important;
 }
-body .mainContainer::-webkit-scrollbar {
-  width: 0px !important;
-  height: 10px !important;
-  background-color: transparent !important;
-}
-body .mainContainer .greenText {
+.mainContainer .greenText {
   color: greenyellow;
 }
-body .mainContainer .underlineText {
+.mainContainer .underlineText {
   text-decoration: underline;
 }
-body .mainContainer .boldText {
+.mainContainer .boldText {
   font-weight: bold;
 }
-body .mainContainer .redSection {
+.mainContainer .redSection {
   background-color: red;
 }
-body .mainContainer .redSection p {
+.mainContainer .redSection p {
   color: white;
   font-size: 30px;
   text-align: center;
 }
-body .mainContainer .fonditoBlancoParaQueSeVea {
+.mainContainer .fonditoBlancoParaQueSeVea {
   background-color: white;
 }
 

@@ -5,11 +5,12 @@
     @include v.flex(column, center, center, nowrap);
 
     .prodInfo{
-        @include v.size(60%, 50%);
+        @include v.size(100%, 50%);
         @include v.flex(row, space-around, start, nowrap);
         background-color: rgba(0, 0, 0, 0.5) !important;
         border-radius: 8px !important;
-        padding: 1% !important;
+        padding: 0% !important;
+        margin: 0% !important;
 
         img{
             @include v.size(55%, 100%);
@@ -54,7 +55,7 @@
     }
 
     .prodContainer{
-        @include v.size(60%, fit-content);
+        @include v.size(95%, fit-content);
         @include v.flex(row, space-between, center, wrap);
         margin-top: 2% !important;
 
@@ -110,7 +111,7 @@
 
         .prodContainer{
             .prodContent{
-                @include v.size(100%, 40vh);
+                @include v.size(95%, 40vh);
                 @include v.flex(column, space-around, center, nowrap);
             }
         }

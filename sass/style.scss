@@ -8,27 +8,23 @@
 @use 'information';
 @use 'products';
 
-body{
-    width: 100vw !important;
-    height: fit-content !important;
-    padding: 0% !important;
-    margin: 0% !important;
 
     .mainContainer{
-        width: 100% !important;
+        width: 100vw !important;
+        height: fit-content !important;
         min-height: 80vh !important;
         background-image: url('../assets/background.jpg');
         background-repeat: no-repeat;
         background-size: cover !important;
-        padding: 2% 1% !important;
+        padding: 0% !important;
         margin: 0% !important;
-        overflow-y: scroll !important;
+        // overflow-y: scroll !important;
 
-          &::-webkit-scrollbar {
-            width: 0px !important;
-            height: 10px !important;
-            background-color: transparent !important;
-        }
+        //   &::-webkit-scrollbar {
+        //     width: 1px !important;
+        //     height: 10px !important;
+        //     background-color: transparent !important;
+        // }
 
         .greenText{
             color: greenyellow;
@@ -51,4 +47,3 @@ body{
             background-color: white;
         }
     }
-}

@@ -2,7 +2,7 @@
 
 footer{
     @include v.flex(row, space-around, center, nowrap);
-    @include v.size(100%, 10vh);
+    @include v.size(100vw, 10vh);
     background-color: white !important;
     position: sticky !important;
     bottom: 0% !important;
