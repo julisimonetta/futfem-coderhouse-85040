@@ -399,18 +399,15 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   }
 }
 
-.mainContainer {
+.prodInfoContainer {
   width: 100% !important;
   height: 100% !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+  padding: 0% 1% !important;
+  margin: 0% !important;
 }
-.mainContainer .prodInfo {
+.prodInfoContainer .prodInfo {
   width: 100% !important;
-  height: 50% !important;
+  height: 100% !important;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -421,13 +418,13 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   padding: 0% !important;
   margin: 0% !important;
 }
-.mainContainer .prodInfo img {
+.prodInfoContainer .prodInfo img {
   width: 55% !important;
   height: 100% !important;
   border-radius: 8px !important;
   object-fit: fill !important;
 }
-.mainContainer .prodInfo .productInfoText {
+.prodInfoContainer .prodInfo .productInfoText {
   width: 45% !important;
   height: fit-content !important;
   display: flex;
@@ -437,7 +434,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   flex-wrap: nowrap;
   padding: 0% 0.5% !important;
 }
-.mainContainer .prodInfo .productInfoText H1 {
+.prodInfoContainer .prodInfo .productInfoText H1 {
   width: 100% !important;
   height: fit-content !important;
   font-size: 2rem !important;
@@ -446,7 +443,7 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   text-align: center !important;
   margin: 0% !important;
 }
-.mainContainer .prodInfo .productInfoText H2 {
+.prodInfoContainer .prodInfo .productInfoText H2 {
   width: 100% !important;
   height: fit-content !important;
   font-size: 0.9rem !important;
@@ -455,24 +452,25 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   margin: 0% !important;
 }
 @media (min-width: 630px) and (max-width: 1100px) {
-  .mainContainer .prodInfo {
+  .prodInfoContainer .prodInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
     flex-wrap: nowrap;
   }
-  .mainContainer .prodInfo img {
+  .prodInfoContainer .prodInfo img {
     width: 100% !important;
     height: 100% !important;
   }
-  .mainContainer .prodInfo .productInfoText {
+  .prodInfoContainer .prodInfo .productInfoText {
     width: 100% !important;
     height: fit-content !important;
   }
 }
-.mainContainer .prodContainer {
-  width: 95% !important;
+
+.prodContainer {
+  width: 100% !important;
   height: fit-content !important;
   display: flex;
   flex-direction: row;
@@ -480,8 +478,9 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2% !important;
+  padding: 0% 1% !important;
 }
-.mainContainer .prodContainer .prodContent {
+.prodContainer .prodContent {
   width: 30% !important;
   height: 30vh !important;
   display: flex;
@@ -495,14 +494,14 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   padding: 1% !important;
   margin: 0% 0% 3% 0% !important;
 }
-.mainContainer .prodContainer .prodContent img {
+.prodContainer .prodContent img {
   width: 100% !important;
   height: 85% !important;
   border-radius: 8px !important;
   margin-bottom: 2% !important;
   object-fit: cover !important;
 }
-.mainContainer .prodContainer .prodContent H1 {
+.prodContainer .prodContent H1 {
   width: 100% !important;
   height: fit-content !important;
   text-align: center !important;
@@ -510,8 +509,9 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   color: white !important;
   font-size: 1rem !important;
 }
+
 @media (min-width: 320px) and (max-width: 630px) {
-  .mainContainer .prodInfo {
+  .prodInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,32 +520,38 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
     width: 95% !important;
     height: fit-content !important;
   }
-  .mainContainer .prodInfo img {
+  .prodInfo img {
     width: 100% !important;
     height: auto !important;
     margin-bottom: 2% !important;
   }
-  .mainContainer .prodInfo .productInfoText {
+  .prodInfo .productInfoText {
     width: 100% !important;
     height: fit-content !important;
   }
-  .mainContainer .prodInfo .productInfoText H1 {
+  .prodInfo .productInfoText H1 {
     font-size: 1.2rem !important;
   }
-  .mainContainer .prodInfo .productInfoText H2 {
+  .prodInfo .productInfoText H2 {
     font-size: 0.7rem !important;
   }
-  .mainContainer .prodContainer .prodContent {
-    width: 95% !important;
+  .prodContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .prodContainer .prodContent {
+    width: 100% !important;
     height: 40vh !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
   }
 }
-
 .mainContainer {
   width: 100vw !important;
   height: fit-content !important;

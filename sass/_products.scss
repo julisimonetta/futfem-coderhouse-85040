@@ -1,63 +1,66 @@
 @use 'variables' as v;
 
-.mainContainer{
-    @include v.size(100%, 100%);
-    @include v.flex(column, center, center, nowrap);
-
-    .prodInfo{
-        @include v.size(100%, 50%);
-        @include v.flex(row, space-around, start, nowrap);
-        background-color: rgba(0, 0, 0, 0.5) !important;
-        border-radius: 8px !important;
-        padding: 0% !important;
+    .prodInfoContainer{
+        @include v.size(100%, 100%);
+        padding: 0% 1% !important;
         margin: 0% !important;
 
-        img{
-            @include v.size(55%, 100%);
+        .prodInfo{
+            @include v.size(100%, 100%);
+            @include v.flex(row, space-around, start, nowrap);
+            background-color: rgba(0, 0, 0, 0.5) !important;
             border-radius: 8px !important;
-            object-fit: fill !important;
-        }
-
-        .productInfoText{
-            @include v.size(45%, fit-content);
-            @include v.flex(column, center, center, nowrap);
-            padding: 0% 0.5% !important;
-
-            H1{
-                @include v.size(100%, fit-content);
-                font-size: 2rem !important;
-                color: red !important;
-                font-weight: bold !important;
-                text-align: center !important;
-                margin: 0% !important;
-            }
-
-            H2{
-                @include v.size(100%, fit-content);
-                font-size: 0.9rem !important;
-                color: white !important;
-                text-align: center !important;
-                margin: 0% !important;
-            }
-        }
-
-        @media (min-width: 630px) and (max-width: 1100px) {
-            @include v.flex(column, space-around, start, nowrap);
+            padding: 0% !important;
+            margin: 0% !important;
 
             img{
-                @include v.size(100%, 100%);
+                @include v.size(55%, 100%);
+                border-radius: 8px !important;
+                object-fit: fill !important;
             }
 
             .productInfoText{
-                @include v.size(100%, fit-content);
+                @include v.size(45%, fit-content);
+                @include v.flex(column, center, center, nowrap);
+                padding: 0% 0.5% !important;
+
+                H1{
+                    @include v.size(100%, fit-content);
+                    font-size: 2rem !important;
+                    color: red !important;
+                    font-weight: bold !important;
+                    text-align: center !important;
+                    margin: 0% !important;
+                }
+
+                H2{
+                    @include v.size(100%, fit-content);
+                    font-size: 0.9rem !important;
+                    color: white !important;
+                    text-align: center !important;
+                    margin: 0% !important;
+                }
+            }
+
+            @media (min-width: 630px) and (max-width: 1100px) {
+                @include v.flex(column, space-around, start, nowrap);
+
+                img{
+                    @include v.size(100%, 100%);
+                }
+
+                .productInfoText{
+                    @include v.size(100%, fit-content);
+                }
             }
         }
     }
 
     .prodContainer{
-        @include v.size(95%, fit-content);
+        @include v.size(100%, fit-content);
         @include v.flex(row, space-between, center, wrap);
         margin-top: 2% !important;
+        padding: 0% 1% !important;
 
         .prodContent{
             @include v.size(30%, 30vh);
@@ -110,10 +113,11 @@
         }
 
         .prodContainer{
+            @include v.flex(column, center, center, nowrap);
+
             .prodContent{
-                @include v.size(95%, 40vh);
-                @include v.flex(column, space-around, center, nowrap);
+                @include v.size(100%, 40vh);
+                @include v.flex(column, center, center, nowrap);
             }
         }
     }
-}
