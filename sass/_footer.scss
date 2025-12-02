@@ -24,9 +24,23 @@ footer{
                     img{
                         @include v.size(24.5%, 100%);
                         object-fit: contain !important;
+                    }:hover{
+                        animation: bigger 1s ease-in forwards !important;
                     }
                 }
             }
         }
+    }
+}
+
+@keyframes bigger{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1.5);
     }
 }

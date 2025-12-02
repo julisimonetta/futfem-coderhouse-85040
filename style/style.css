@@ -163,7 +163,21 @@ footer .carousel .carousel-inner .carousel-item .partnerSliderImg img {
   height: 100% !important;
   object-fit: contain !important;
 }
+footer .carousel .carousel-inner .carousel-item .partnerSliderImg :hover {
+  animation: bigger 1s ease-in forwards !important;
+}
 
+@keyframes bigger {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
 .gridContainer {
   width: 100% !important;
   height: fit-content !important;
